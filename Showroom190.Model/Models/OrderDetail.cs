@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Showroom190.Model.Models
 {
     [Table("OrderDetails")]
-    class OrderDetail
+    public class OrderDetail
     {
         [Key]
         public int OrderID { set; get; }

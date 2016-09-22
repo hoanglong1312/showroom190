@@ -6,7 +6,7 @@ using System.Xml.Linq;
 namespace Showroom190.Model.Models
 {
     [Table("Product")]
-    class Product : Auditable
+    public class Product : Auditable
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

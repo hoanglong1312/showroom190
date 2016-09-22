@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Showroom190.Model.Models
 {
     [Table("Tags")]
-    internal class Tag
+    public class Tag
     {
         [Key]
         [MaxLength(50)]

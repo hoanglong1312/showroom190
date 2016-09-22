@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Showroom190.Model.Models
 {
-    [Table("Menu")]
-    internal class Menu
+    [Table("Menus")]
+    public class Menu
     {   [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { set; get; }

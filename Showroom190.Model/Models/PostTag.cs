@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Showroom190.Model.Models
 {
     [Table("PostTags")]
-    internal class PostTag
+    public class PostTag
     {
         [Key]
         public int PostID { set; get; }
