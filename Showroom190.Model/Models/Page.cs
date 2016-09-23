@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Showroom190.Model.Models
 {
     [Table("Pages")]
-    internal class Page : Auditable
+    public class Page : Auditable
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Showroom190.Model.Models
 {
     [Table("SupportOnlines")]
-    internal class SupportOnline
+    public class SupportOnline
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -32,7 +32,6 @@ namespace Showroom190.Model.Models
         [MaxLength(50)]
         public string Facebook { set; get; }
 
-        [MaxLength(50)]
         public string Status { set; get; }
 
         public int? DisplayOrder { set; get; }

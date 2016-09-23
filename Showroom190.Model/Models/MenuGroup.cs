@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Showroom190.Model.Models
 {
     [Table("MenuGroups")]
-    class MenuGroup
+    public class MenuGroup
     {   [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { set; get; }

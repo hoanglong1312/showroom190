@@ -4,13 +4,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Showroom190.Model.Models
 {
     [Table("PostTags")]
-    internal class PostTag
+    public class PostTag
     {
         [Key]
+        [Column(Order=1)]
         public int PostID { set; get; }
 
         [Key]
-        [Column(TypeName = "varchar")]
+        [Column(TypeName = "varchar",Order = 2)]
         [MaxLength(50)]
         public string TagID { set; get; }
 

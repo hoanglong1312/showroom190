@@ -4,10 +4,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Showroom190.Model.Models
 {
     [Table("Tags")]
-    internal class Tag
+    public class Tag
     {
         [Key]
         [MaxLength(50)]
+        [Column(TypeName = "varchar")]
         public string ID { set; get; }
 
         [MaxLength(50)]

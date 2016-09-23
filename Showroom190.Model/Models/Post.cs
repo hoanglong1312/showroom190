@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Showroom190.Model.Models
 {
     [Table("Posts")]
-    class Post : Auditable
+    public class Post : Auditable
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
